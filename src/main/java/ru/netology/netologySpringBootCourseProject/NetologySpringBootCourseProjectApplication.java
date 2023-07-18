@@ -1,0 +1,13 @@
+package ru.netology.netologySpringBootCourseProject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class NetologySpringBootCourseProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(NetologySpringBootCourseProjectApplication.class, args);
+	}
+
+}
