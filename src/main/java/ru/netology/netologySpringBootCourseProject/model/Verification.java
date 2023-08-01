@@ -1,8 +1,13 @@
 package ru.netology.netologySpringBootCourseProject.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+@Getter
+@Setter
 public class Verification {
     @NotNull
     @NotBlank
@@ -15,22 +20,6 @@ public class Verification {
 
     public Verification(String code, String operationId) {
         this.code = code;
-        this.operationId = operationId;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getOperationId() {
-        return operationId;
-    }
-
-    public void setOperationId(String operationId) {
         this.operationId = operationId;
     }
 

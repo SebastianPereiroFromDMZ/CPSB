@@ -1,8 +1,14 @@
 package ru.netology.netologySpringBootCourseProject.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 
+@Getter
+@Setter
 public class Amount {
+
     private BigDecimal value;
     private String currency;
 
@@ -12,22 +18,6 @@ public class Amount {
     }
 
     public Amount() {
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
-    public BigDecimal getValue() {
-        return value;
-    }
-
-    public void setValue(BigDecimal value) {
-        this.value = value;
     }
 
     @Override

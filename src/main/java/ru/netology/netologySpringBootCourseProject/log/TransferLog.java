@@ -1,22 +1,16 @@
 package ru.netology.netologySpringBootCourseProject.log;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TransferLog {
-    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
     protected AtomicInteger num = new AtomicInteger(0);
     private final ConcurrentHashMap<String, Integer> cardTransactions = new ConcurrentHashMap<>();
     private static volatile TransferLog INSTANCE = null;
+    private final Logger logger = Logger.getLogger(TransferLog.class.getName());
 
-    File file = new File("src/main/resources/log/logCardTransactions.log");
 
     private TransferLog() {
     }
@@ -32,50 +26,20 @@ public class TransferLog {
     }
 
     public void log(LogBuilder logBuilder) {
-        String operationId = String.valueOf(num.incrementAndGet());
-        cardTransactions.put(logBuilder.getCardNumberFrom(), cardTransactions.getOrDefault(logBuilder.getCardNumberFrom(), 0) + 1);
-        String s = String.format(
-                "[%s]\n" +
-                        "Операция в системе: №%s\n" +
-                        "Операция по карте: №%d\n" +
-                        "Номер карты списания: %s\n" +
-                        "Номер карты зачисления: %s\n" +
-                        "Сумма списания: %.0f %s\n" +
-                        "Комиссия за перевод: %.0f %s\n" +
-                        "Общая сумма списания: %.0f %s\n" +
-                        "Остаток по карте: %s\n" +
-                        "Результат операции: %s\n\n",
-                dtf.format(LocalDateTime.now()),
-                operationId,
-                cardTransactions.get(logBuilder.getCardNumberFrom()),
-                logBuilder.getCardNumberFrom(),
-                logBuilder.getCardNumberTo(),
-                logBuilder.getAmount().getValue(),
-                logBuilder.getAmount().getCurrency(),
-                logBuilder.getCommission().getValue(),
-                logBuilder.getCommission().getCurrency(),
-                logBuilder.getSum().getValue(),
-                logBuilder.getSum().getCurrency(),
-                logBuilder.getBalance(),
-                logBuilder.getResult()
-        );
-        writeLog(s);
-        System.out.println(s);
-    }
 
-    public void writeLog(String s) {
-        try {
-            if (!file.exists()) {
-                boolean folder = new File("src/main/resources/log").mkdir();
-                //создаем файл
-                file.createNewFile();
-            }
-            BufferedWriter bf = new BufferedWriter(new FileWriter(
-                    file, true));
-            bf.write(s);
-            bf.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        String operationId = String.valueOf(num.incrementAndGet());
+
+        cardTransactions.put(logBuilder.getCardNumberFrom(), cardTransactions.getOrDefault(logBuilder.getCardNumberFrom(), 0) + 1);
+
+        logger.log(Level.INFO, "---------------------");
+        logger.log(Level.INFO, "Операция в системе: " + operationId);
+        logger.log(Level.INFO, "Операция по карте: " + cardTransactions.get(logBuilder.getCardNumberFrom()));
+        logger.log(Level.INFO, "Номер карты списания: " + logBuilder.getCardNumberFrom());
+        logger.log(Level.INFO, "Номер карты зачисления: " + logBuilder.getCardNumberTo());
+        logger.log(Level.INFO, "Сумма списания: " + logBuilder.getAmount().getValue() + logBuilder.getAmount().getCurrency());
+        logger.log(Level.INFO, "Комиссия за перевод: " + logBuilder.getCommission().getValue() + logBuilder.getCommission().getCurrency());
+        logger.log(Level.INFO, "Общая сумма списания: " + logBuilder.getSum().getValue() + logBuilder.getSum().getCurrency());
+        logger.log(Level.INFO, "Остаток по карте: " + logBuilder.getBalance());
+        logger.log(Level.INFO, "Результат операции: " + logBuilder.getResult());
     }
 }

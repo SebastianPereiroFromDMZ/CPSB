@@ -2,7 +2,7 @@ package ru.netology.netologySpringBootCourseProject.log;
 
 import ru.netology.netologySpringBootCourseProject.model.Amount;
 
-import javax.validation.constraints.NotBlank;
+
 import java.math.BigDecimal;
 
 public class LogBuilder {

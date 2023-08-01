@@ -1,0 +1,170 @@
+2023-07-28 23:49:55.936  INFO 12104 --- [main] tologySpringBootCourseProjectApplication : Starting NetologySpringBootCourseProjectApplication using Java 11.0.17 on DESKTOP-B0FQ2IR with PID 12104 (C:\Users\Lolipop\IdeaProjects\SpringBoot\Cource_SpringBoot_My\target\classes started by Lolipop in C:\Users\Lolipop\IdeaProjects\SpringBoot\Cource_SpringBoot_My)
+2023-07-28 23:49:55.940  INFO 12104 --- [main] tologySpringBootCourseProjectApplication : No active profile set, falling back to 1 default profile: "default"
+2023-07-28 23:49:57.236  INFO 12104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-28 23:49:57.247  INFO 12104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-28 23:49:57.248  INFO 12104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-07-28 23:49:57.401  INFO 12104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-28 23:49:57.402  INFO 12104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1417 ms
+2023-07-28 23:49:58.130  INFO 12104 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-28 23:49:58.181  INFO 12104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-28 23:49:58.203  INFO 12104 --- [main] tologySpringBootCourseProjectApplication : Started NetologySpringBootCourseProjectApplication in 2.701 seconds (JVM running for 4.404)
+2023-07-28 23:49:58.961  INFO 12104 --- [RMI TCP Connection(2)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-28 23:49:58.963  INFO 12104 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-28 23:49:58.964  INFO 12104 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-28 23:50:21.216 ERROR 12104 --- [http-nio-8080-exec-2] r.n.n.service.TransferServiceImpl        : The card for transfer and receipt is the same.
+2023-07-28 23:51:02.174  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:51:02.174  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Операция в системе: 1
+2023-07-28 23:51:02.175  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Операция по карте: 1
+2023-07-28 23:51:02.178  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:51:02.179  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:51:02.181  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Сумма списания: 50000000000RUR
+2023-07-28 23:51:02.182  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Комиссия за перевод: 500000000RUR
+2023-07-28 23:51:02.182  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Общая сумма списания: 50500000000RUR
+2023-07-28 23:51:02.183  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Остаток по карте: 100000000
+2023-07-28 23:51:02.183  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 50500000000 RUR. Funds available: 100000000 RUR
+2023-07-28 23:51:02.183 ERROR 12104 --- [http-nio-8080-exec-4] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:21.029  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:21.030  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Операция в системе: 2
+2023-07-28 23:52:21.030  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Операция по карте: 2
+2023-07-28 23:52:21.030  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:21.030  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:21.031  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Сумма списания: 50000000000RUR
+2023-07-28 23:52:21.031  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Комиссия за перевод: 500000000RUR
+2023-07-28 23:52:21.031  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Общая сумма списания: 50500000000RUR
+2023-07-28 23:52:21.031  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Остаток по карте: 100000000
+2023-07-28 23:52:21.032  INFO 12104 --- [http-nio-8080-exec-6] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 50500000000 RUR. Funds available: 100000000 RUR
+2023-07-28 23:52:21.032 ERROR 12104 --- [http-nio-8080-exec-6] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:28.472  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:28.473  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Операция в системе: 3
+2023-07-28 23:52:28.473  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Операция по карте: 3
+2023-07-28 23:52:28.473  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Сумма списания: 500000000RUR
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Комиссия за перевод: 5000000RUR
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Общая сумма списания: 505000000RUR
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Остаток по карте: 100000000
+2023-07-28 23:52:28.474  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 505000000 RUR. Funds available: 100000000 RUR
+2023-07-28 23:52:28.474 ERROR 12104 --- [http-nio-8080-exec-8] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:29.570  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:29.571  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Операция в системе: 4
+2023-07-28 23:52:29.571  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Операция по карте: 4
+2023-07-28 23:52:29.571  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:29.571  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:29.572  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Сумма списания: 500000000RUR
+2023-07-28 23:52:29.572  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Комиссия за перевод: 5000000RUR
+2023-07-28 23:52:29.572  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Общая сумма списания: 505000000RUR
+2023-07-28 23:52:29.572  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Остаток по карте: 100000000
+2023-07-28 23:52:29.572  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 505000000 RUR. Funds available: 100000000 RUR
+2023-07-28 23:52:29.573 ERROR 12104 --- [http-nio-8080-exec-9] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:36.949  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:36.950  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Операция в системе: 5
+2023-07-28 23:52:36.950  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Операция по карте: 5
+2023-07-28 23:52:36.950  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:36.950  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:36.950  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Сумма списания: 50000000RUR
+2023-07-28 23:52:36.951  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Комиссия за перевод: 500000RUR
+2023-07-28 23:52:36.951  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Общая сумма списания: 50500000RUR
+2023-07-28 23:52:36.951  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Остаток по карте: 49500000
+2023-07-28 23:52:36.951  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:38.641  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:38.641  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Операция в системе: 6
+2023-07-28 23:52:38.641  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Операция по карте: 6
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Сумма списания: 50000000RUR
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Комиссия за перевод: 500000RUR
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Общая сумма списания: 50500000RUR
+2023-07-28 23:52:38.642  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Остаток по карте: 49500000
+2023-07-28 23:52:38.643  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 50500000 RUR. Funds available: 49500000 RUR
+2023-07-28 23:52:38.643 ERROR 12104 --- [http-nio-8080-exec-3] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:49.951  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Операция в системе: 7
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Операция по карте: 7
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Сумма списания: 50000000RUR
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Комиссия за перевод: 500000RUR
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Общая сумма списания: 50500000RUR
+2023-07-28 23:52:49.952  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Остаток по карте: 49500000
+2023-07-28 23:52:49.953  INFO 12104 --- [http-nio-8080-exec-5] r.n.n.log.TransferLog                    : Результат операции: The operation is impossible. Low balance. Amount requested for transfer: 50500000 RUR. Funds available: 49500000 RUR
+2023-07-28 23:52:49.953 ERROR 12104 --- [http-nio-8080-exec-5] r.n.n.service.TransferServiceImpl        : Low balance.
+2023-07-28 23:52:54.775  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:54.775  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Операция в системе: 8
+2023-07-28 23:52:54.775  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Операция по карте: 8
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Остаток по карте: 44450000
+2023-07-28 23:52:54.776  INFO 12104 --- [http-nio-8080-exec-7] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:55.596  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:55.597  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Операция в системе: 9
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Операция по карте: 9
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:55.598  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Остаток по карте: 39400000
+2023-07-28 23:52:55.599  INFO 12104 --- [http-nio-8080-exec-8] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:56.254  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Операция в системе: 10
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Операция по карте: 10
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:56.255  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:56.256  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Остаток по карте: 34350000
+2023-07-28 23:52:56.256  INFO 12104 --- [http-nio-8080-exec-10] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Операция в системе: 11
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Операция по карте: 11
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:56.874  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:56.875  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Остаток по карте: 29300000
+2023-07-28 23:52:56.875  INFO 12104 --- [http-nio-8080-exec-9] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:57.437  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Операция в системе: 12
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Операция по карте: 12
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Остаток по карте: 24250000
+2023-07-28 23:52:57.438  INFO 12104 --- [http-nio-8080-exec-1] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:58.174  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:58.174  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Операция в системе: 13
+2023-07-28 23:52:58.174  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Операция по карте: 13
+2023-07-28 23:52:58.174  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:58.175  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:58.175  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:58.175  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:58.175  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:58.175  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Остаток по карте: 19200000
+2023-07-28 23:52:58.176  INFO 12104 --- [http-nio-8080-exec-2] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:52:58.829  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:52:58.829  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Операция в системе: 14
+2023-07-28 23:52:58.830  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Операция по карте: 14
+2023-07-28 23:52:58.830  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Номер карты списания: 4558445885582478
+2023-07-28 23:52:58.830  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:52:58.831  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:52:58.831  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:52:58.831  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:52:58.831  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Остаток по карте: 14150000
+2023-07-28 23:52:58.831  INFO 12104 --- [http-nio-8080-exec-3] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.
+2023-07-28 23:53:16.818  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : ---------------------
+2023-07-28 23:53:16.818  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Операция в системе: 15
+2023-07-28 23:53:16.818  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Операция по карте: 1
+2023-07-28 23:53:16.818  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Номер карты списания: 455844588558478
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Номер карты зачисления: 455844588558247
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Сумма списания: 5000000RUR
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Комиссия за перевод: 50000RUR
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Общая сумма списания: 5050000RUR
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Остаток по карте: 94950000
+2023-07-28 23:53:16.819  INFO 12104 --- [http-nio-8080-exec-4] r.n.n.log.TransferLog                    : Результат операции: The operation was successful.

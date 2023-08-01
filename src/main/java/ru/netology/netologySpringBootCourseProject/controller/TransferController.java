@@ -1,28 +1,18 @@
 package ru.netology.netologySpringBootCourseProject.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
-import ru.netology.netologySpringBootCourseProject.exceptions.InvalidTransactionExceptions;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import ru.netology.netologySpringBootCourseProject.exceptions.BadRequestExceptions;
 import ru.netology.netologySpringBootCourseProject.model.CardTransfer;
 import ru.netology.netologySpringBootCourseProject.model.Verification;
-import ru.netology.netologySpringBootCourseProject.service.TransferService;
 
-@RestController
-public class TransferController {
-    private final TransferService transferService;
+public interface TransferController {
 
-    public TransferController(TransferService transferService) {
-        this.transferService = transferService;
-    }
 
-    @PostMapping("/transfer")
-    public String transferMoneyCardToCard(@RequestBody @Validated CardTransfer cardTransfer) throws InvalidTransactionExceptions {
-        return transferService.transferMoneyCardToCard(cardTransfer);
-    }
+    public ResponseEntity<String> transferMoneyCardToCard(@RequestBody @Validated CardTransfer cardTransfer) throws BadRequestExceptions;
 
-    @PostMapping("/confirmOperation")
-    public String confirmOperation(@RequestBody @Validated Verification verification) throws InvalidTransactionExceptions {
-        //return transferService.confirmOperation(verification);
-        return null;
-    }
+    public ResponseEntity<String> confirmOperation(@RequestBody @Validated Verification verification) throws BadRequestExceptions;
 }
